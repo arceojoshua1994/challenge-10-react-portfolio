@@ -1,0 +1,106 @@
+/* customStyles.css */
+body {
+  background-color: white;
+  color: #1F2041;
+}
+
+.is-main-color {
+  background-color: #38AECC;
+}
+
+.is-secondary-color {
+  background-color: #F9A620;
+}
+
+.is-accent-color {
+  background-color: #046E8F;
+}
+
+.is-accent-color-2 {
+  background-color: #0090C1;
+}
+
+.gradient-border {
+  border-image: linear-gradient(to right, #38AECC, #F9A620);
+  border-image-slice: 1;
+}
+
+.gradient-header {
+  background: linear-gradient(to right, #38AECC, #F9A620);
+}
+
+.profile-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+.profile-photo {
+  width: 100px; /* Adjust size as desired */
+  height: 100px; /* Adjust size as desired */
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px; /* Spacing between photo and text */
+  border: 3px solid transparent;
+  background-image: linear-gradient(white, white), radial-gradient(circle at top left, #33ccff, #ff33cc);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.profile-photo img {
+  width: 100%;
+  height: auto;
+}
+
+.profile-info .title,
+.profile-info .subtitle {
+  margin: 0;
+  padding: 0;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: center; /* Center items horizontally */
+  text-align: left; /* Align text to the left for the title and description */
+  padding: 20px;
+  max-width: 960px; /* Or any max-width you prefer */
+  margin: auto; /* This will center your container */
+}
+
+.profile-photo {
+  flex-shrink: 0; /* Prevent the photo from shrinking */
+  width: 100px; /* Your desired width */
+  height: 100px; /* Your desired height */
+  border-radius: 50%; /* Make the photo round */
+  overflow: hidden; /* Ensure the image doesn't overflow the rounded edges */
+  border: 3px solid transparent; /* Adjust border size as needed */
+  background-image: linear-gradient(white, white), radial-gradient(circle at top left, #33ccff, #ff33cc);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.profile-photo img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+
+.profile-info {
+  margin-left: 20px; /* Spacing between photo and text */
+}
+
+.profile-info h1 {
+  margin: 0;
+  font-size: 1.5em; /* Adjust size as needed */
+  color: #333; /* Or any color you prefer */
+}
+
+.profile-info p {
+  margin: 5px 0 0; /* Spacing for the paragraph */
+  color: #666; /* Or any color you prefer */
+}
+
+
+/* Add any additional styling needed for alignment and spacing */
+
