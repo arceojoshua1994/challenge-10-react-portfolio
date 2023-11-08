@@ -104,3 +104,96 @@ body {
 
 /* Add any additional styling needed for alignment and spacing */
 
+
+.portfolio-item .portfolio-btn {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  border-radius: 4px;
+  opacity: 0;
+  transition: .5s;
+}
+
+.portfolio-item:hover .portfolio-btn {
+  opacity: 1;
+  width: calc(100% - 60px);
+  height: calc(100% - 60px);
+  top: 30px;
+  left: 30px;
+}
+
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  list-style: none;
+  justify-content: center; /* Centered nav items */
+  background: #f8f9fa; /* Light grey background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+.nav-link {
+  padding: 0.75rem 1.25rem; /* Increased padding for better touch targets */
+  color: #007bff; /* Bright blue color for links */
+  font-weight: 500; /* Slightly bolder font for readability */
+}
+
+.nav-link:hover, .nav-link:focus {
+  color: #0056b3; /* Darker blue on hover/focus for better contrast */
+  background-color: #e2e6ea; /* Light background on hover/focus for visibility */
+}
+
+.nav-tabs {
+  border-bottom: 2px solid #dee2e6; /* Thicker bottom border for distinction */
+}
+
+.nav-tabs .nav-item {
+  margin-bottom: -2px; /* Align with the thicker border */
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  color: #495057; /* Dark grey color for active state for contrast */
+  background-color: #fff; /* White background for active state */
+  border-color: #dee2e6 #dee2e6 #fff; /* Borders matching the tab and background */
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #007bff; /* Bright blue for active pills for visibility */
+}
+
+.navbar {
+  padding: 0.75rem 2rem; /* Increased padding for a larger hit area */
+  background: #ffffff; /* White background for clean look */
+  border-bottom: 2px solid #dee2e6; /* Border for separation from content */
+}
+
+.navbar-brand {
+  color: #007bff; /* Brand color for visibility and consistency */
+  font-size: 1.5rem; /* Larger font size for brand prominence */
+}
+
+.navbar-toggler {
+  border-color: rgba(0, 0, 0, 0.1); /* Light border for the toggler */
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1rem; /* Increased spacing for desktop */
+    padding-left: 1rem;
+  }
+}
+
+.text-primary {
+  color: #38AECC !important;
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+a.text-primary:hover, a.text-primary:focus {
+  color: #38AECC !important;
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
