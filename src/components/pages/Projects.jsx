@@ -4,7 +4,7 @@ function Projects() {
       <div className="container">
         <div className="position-relative d-flex align-items-center justify-content-center">
           <h1 className="display-1 text-uppercase text-white" style={{ WebkitTextStroke: '1px #dee2e6' }}>Gallery</h1>
-          <h1 className="position-absolute text-uppercase text-primary">My Portfolio</h1>
+          <h1 className="position-absolute text-uppercase title-color">My Portfolio</h1>
         </div>
         
         <div className="row portfolio-container">

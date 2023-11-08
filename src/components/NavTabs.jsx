@@ -2,13 +2,13 @@ function NavTabs({ currentPage, handlePageChange }) {
   return (
     <nav className="navbar shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
       <a href="index.html" className="navbar-brand ml-lg-3">
-        <h1 className="m-0 display-5"><span className="text-primary">J</span>A</h1>
+        <h1 className="m-0 display-5"><span className="title-color">J</span>A</h1>
       </a>
       <button type="button" className="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse px-lg-3" id="navbarCollapse">
-        <div className="navbar-nav m-auto py-0">
+        <div className="navbar-nav m-auto py-0 title-color">
           <a
             href="#home"
             className={`nav-item nav-link ${currentPage === 'Home' ? 'active' : ''}`}

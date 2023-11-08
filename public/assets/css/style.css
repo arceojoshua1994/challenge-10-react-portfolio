@@ -20,6 +20,11 @@ body {
   background-color: #0090C1;
 }
 
+.title-color {
+  color: #38AECC !important;
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
 .gradient-border {
   border-image: linear-gradient(to right, #38AECC, #F9A620);
   border-image-slice: 1;
@@ -137,12 +142,10 @@ body {
 
 .nav-link {
   padding: 0.75rem 1.25rem; /* Increased padding for better touch targets */
-  color: #007bff; /* Bright blue color for links */
   font-weight: 500; /* Slightly bolder font for readability */
 }
 
 .nav-link:hover, .nav-link:focus {
-  color: #0056b3; /* Darker blue on hover/focus for better contrast */
   background-color: #e2e6ea; /* Light background on hover/focus for visibility */
 }
 
@@ -173,7 +176,6 @@ body {
 }
 
 .navbar-brand {
-  color: #007bff; /* Brand color for visibility and consistency */
   font-size: 1.5rem; /* Larger font size for brand prominence */
 }
 
@@ -188,10 +190,7 @@ body {
   }
 }
 
-.text-primary {
-  color: #38AECC !important;
-  transition: color 0.3s ease; /* Smooth transition for color change */
-}
+
 
 a.text-primary:hover, a.text-primary:focus {
   color: #38AECC !important;
