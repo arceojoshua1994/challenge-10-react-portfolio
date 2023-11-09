@@ -40,7 +40,7 @@ function NavTabs({ currentPage, handlePageChange }) {
           </a>
           {/* Add more links as needed */}
         </div>
-        <a href="#contact" className="btn btn-outline-primary d-none d-lg-block" onClick={() => handlePageChange('Contact')}>
+        <a href="#contact" className="btn btn-outline-color d-none d-lg-block" onClick={() => handlePageChange('Contact')}>
           Hire Me
         </a>
       </div>

@@ -11,21 +11,23 @@ export default function Contact() {
             <div className="contact-form text-center">
               <div id="success"></div>
               <form name="sentMessage" id="contactForm" noValidate="novalidate" className="form-styled">
-                <div className="form-row">
-                  <div className="control-group col-12 col-md-6 mb-3">
-                    <input type="text" className="form-control p-4" id="name" placeholder="Your Name" required />
+                <div className="row justify-content-center">
+                  <div className="col-md-6">
+                    <div className="control-group mb-3">
+                      <input type="text" className="form-control p-4" id="name" placeholder="Your Name" required />
+                    </div>
+                    <div className="control-group mb-3">
+                      <input type="email" className="form-control p-4" id="email" placeholder="Your Email" required />
+                    </div>
+                    <div className="control-group mb-3">
+                      <input type="text" className="form-control p-4" id="subject" placeholder="Subject" required />
+                    </div>
+                    <div className="control-group mb-3">
+                      <textarea className="form-control py-3 px-4" rows="5" id="message" placeholder="Message" required></textarea>
+                    </div>
+                    <button className="btn btn-outline-color" type="submit" id="sendMessageButton">Send Message</button>
                   </div>
-                  <div className="control-group col-12 col-md-6 mb-3">
-                    <input type="email" className="form-control p-4" id="email" placeholder="Your Email" required />
-                  </div>
                 </div>
-                <div className="control-group mb-3">
-                  <input type="text" className="form-control p-4" id="subject" placeholder="Subject" required />
-                </div>
-                <div className="control-group mb-3">
-                  <textarea className="form-control py-3 px-4" rows="5" id="message" placeholder="Message" required></textarea>
-                </div>
-                <button className="btn btn-outline-primary" type="submit" id="sendMessageButton">Send Message</button>
               </form>
             </div>
           </div>

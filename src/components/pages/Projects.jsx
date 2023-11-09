@@ -13,7 +13,7 @@ function Projects() {
           <div className="col-lg-4 col-md-6 mb-4 portfolio-item first">
             <div className="position-relative overflow-hidden mb-2">
               <img className="img-fluid rounded w-100" src="/assets/images/project-1.jpg" alt="Portfolio Description" />
-              <div className="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+              <div className="portfolio-btn d-flex align-items-center justify-content-center">
                 <a href="/assets/images/project-1.jpg" data-lightbox="portfolio">
                   <i className="fa fa-plus text-white" style={{ fontSize: '60px' }}></i>
                 </a>
@@ -23,7 +23,7 @@ function Projects() {
           <div className="col-lg-4 col-md-6 mb-4 portfolio-item first">
             <div className="position-relative overflow-hidden mb-2">
               <img className="img-fluid rounded w-100" src="/assets/images/project-2.jpg" alt="Portfolio Description" />
-              <div className="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+              <div className="portfolio-btn d-flex align-items-center justify-content-center">
                 <a href="/assets/images/project-2.jpg" data-lightbox="portfolio">
                   <i className="fa fa-plus text-white" style={{ fontSize: '60px' }}></i>
                 </a>
@@ -33,8 +33,38 @@ function Projects() {
           <div className="col-lg-4 col-md-6 mb-4 portfolio-item first">
             <div className="position-relative overflow-hidden mb-2">
               <img className="img-fluid rounded w-100" src="/assets/images/project-3.jpg" alt="Portfolio Description" />
-              <div className="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+              <div className="portfolio-btn d-flex align-items-center justify-content-center">
                 <a href="/assets/images/project-3.jpg" data-lightbox="portfolio">
+                  <i className="fa fa-plus text-white" style={{ fontSize: '60px' }}></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-6 mb-4 portfolio-item first">
+            <div className="position-relative overflow-hidden mb-2">
+              <img className="img-fluid rounded w-100" src="/assets/images/ex1.jpg" alt="Portfolio Description" />
+              <div className="portfolio-btn d-flex align-items-center justify-content-center">
+                <a href="/assets/images/ex1.jpg" data-lightbox="portfolio">
+                  <i className="fa fa-plus text-white" style={{ fontSize: '60px' }}></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-6 mb-4 portfolio-item first">
+            <div className="position-relative overflow-hidden mb-2">
+              <img className="img-fluid rounded w-100" src="/assets/images/ex2.jpg" alt="Portfolio Description" />
+              <div className="portfolio-btn d-flex align-items-center justify-content-center">
+                <a href="/assets/images/ex2.jpg" data-lightbox="portfolio">
+                  <i className="fa fa-plus text-white" style={{ fontSize: '60px' }}></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-6 mb-4 portfolio-item first">
+            <div className="position-relative overflow-hidden mb-2">
+              <img className="img-fluid rounded w-100" src="/assets/images/ex-3.jpg" alt="Portfolio Description" />
+              <div className="portfolio-btn d-flex align-items-center justify-content-center">
+                <a href="/assets/images/ex-3.jpg" data-lightbox="portfolio">
                   <i className="fa fa-plus text-white" style={{ fontSize: '60px' }}></i>
                 </a>
               </div>
