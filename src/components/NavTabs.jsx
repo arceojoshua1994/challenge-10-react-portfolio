@@ -14,16 +14,16 @@ function NavTabs({ currentPage, handlePageChange }) {
             className={`nav-item nav-link ${currentPage === 'Home' ? 'active' : ''}`}
             onClick={() => handlePageChange('Home')}
           >
-            Home
+            About Me
           </a>
           <a
             href="#about"
             className={`nav-item nav-link ${currentPage === 'About' ? 'active' : ''}`}
             onClick={() => handlePageChange('About')}
           >
-            About
+            Resume
           </a>
-          {/* Assuming 'Quality' should link to 'Projects' as per your original component */}
+          
           <a
             href="#projects"
             className={`nav-item nav-link ${currentPage === 'Projects' ? 'active' : ''}`}
@@ -38,7 +38,7 @@ function NavTabs({ currentPage, handlePageChange }) {
           >
             Contact
           </a>
-          {/* Add more links as needed */}
+         
         </div>
         <a href="#contact" className="btn btn-outline-color d-none d-lg-block" onClick={() => handlePageChange('Contact')}>
           Hire Me

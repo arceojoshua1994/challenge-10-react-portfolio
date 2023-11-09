@@ -1,10 +1,10 @@
 export default function Home() {
   return (
     <div className="container-fluid bg-primary d-flex align-items-center py-5 gradient-header" id="home" style={{ minHeight: '100vh' }}>
-      <div className="container mb-5"> {/* Added bottom margin to the container */}
+      <div className="container mb-5"> 
         <div className="row align-items-center">
-          <div className="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0 mb-4"> {/* Added bottom margin to the image column */}
-            <img className="img-fluid w-100 rounded-circle shadow-sm mb-3" src="assets/images/IMG_1973.JPG" alt="Joshua Arceo" /> {/* Added bottom margin to the image */}
+          <div className="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0 mb-4"> 
+            <img className="img-fluid w-100 rounded-circle shadow-sm mb-3" src="assets/images/IMG_1973.JPG" alt="Joshua Arceo" />
           </div>
           <div className="col-lg-7 text-center text-lg-left">
             <h3 className="text-white font-weight-normal mb-3">I'm</h3>
