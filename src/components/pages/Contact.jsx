@@ -1,4 +1,49 @@
 export default function Contact() {
+
+  useEffect(() => {
+    // Function to check if an input field is empty
+    const handleBlur = (event) => {
+      if (!event.target.value) {
+        event.target.classList.add('is-invalid');
+      } else {
+        event.target.classList.remove('is-invalid');
+      }
+    };
+
+    // Function to validate email
+    const validateEmail = (event) => {
+      const email = event.target.value;
+      const re = /^(([^<>()\]\\.,;:\s@"]+(\.[^<>()\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      if (!re.test(email.toLowerCase())) {
+        event.target.classList.add('is-invalid');
+      } else {
+        event.target.classList.remove('is-invalid');
+      }
+    };
+
+    // Add event listeners
+    const nameInput = document.getElementById('name');
+    const emailInput = document.getElementById('email');
+    const subjectInput = document.getElementById('subject');
+    const messageInput = document.getElementById('message');
+
+    nameInput.addEventListener('blur', handleBlur);
+    emailInput.addEventListener('blur', handleBlur);
+    emailInput.addEventListener('input', validateEmail);
+    subjectInput.addEventListener('blur', handleBlur);
+    messageInput.addEventListener('blur', handleBlur);
+
+    // Clean up function
+    return () => {
+      nameInput.removeEventListener('blur', handleBlur);
+      emailInput.removeEventListener('blur', handleBlur);
+      emailInput.removeEventListener('input', validateEmail);
+      subjectInput.removeEventListener('blur', handleBlur);
+      messageInput.removeEventListener('blur', handleBlur);
+    };
+  }, []);
+
+
   return (
     <div className="container-fluid py-5 " id="contact">
       <div className="container">
